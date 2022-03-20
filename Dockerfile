@@ -8,4 +8,4 @@ LABEL maintainer="oceanlvr"
 # RUN apk add git
 WORKDIR /flarum/app
 COPY . .
-RUN composer install
+RUN composer install --ignore-platform-req=ext-simplexml
